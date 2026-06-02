@@ -1,0 +1,2004 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLM赛博史记 | 模型生命周期</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">MODEL EPITAPH ARCHIVE</p>
+        <h1 id="page-title"><span class="latin">LLM</span>赛博史记</h1>
+        <p class="intro">
+          记录每一个模型从发布、扩张、封神、边缘化到退役的生命周期。
+          它们不是永生的基础设施，而是一代代被记住又被替换的技术遗迹。
+        </p>
+      </section>
+
+      <section class="timeline-section" aria-label="模型生命周期时间轴">
+        <div class="timeline">
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">01</div>
+            <time datetime="2020-02-01">2020.02</time>
+            <div class="event-body">
+              <h2><span class="latin">Turing-NLG</span></h2>
+              <p>Microsoft，17B，当时最大的英文生成模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">02</div>
+            <time datetime="2020-04-01">2020.04</time>
+            <div class="event-body">
+              <h2><span class="latin">Blender</span> (1.0/2.0/3.0)</h2>
+              <p>Meta (FAIR)，up to 9.4B，开放域对话模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-decline">
+            <div class="marker" aria-hidden="true">03</div>
+            <time datetime="2020-06-01">2020.06</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-3</span></h2>
+              <p>OpenAI，175B，Few-shot learning 开创者，最初通过 API 访问</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">04</div>
+            <time datetime="2020-06-01">2020.06</time>
+            <div class="event-body">
+              <h2><span class="latin">PanGu-</span>α</h2>
+              <p>华为，200B，中文预训练大模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-decline">
+            <div class="marker" aria-hidden="true">05</div>
+            <time datetime="2021-01-01">2021.01</time>
+            <div class="event-body">
+              <h2><span class="latin">DALL</span>·<span class="latin">E</span> (1)</h2>
+              <p>OpenAI，12B，文生图（非纯语言模型，但基于 Transformer）</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">06</div>
+            <time datetime="2021-04-01">2021.04</time>
+            <div class="event-body">
+              <h2><span class="latin">PLUG</span> / <span class="latin">PLUG-X</span></h2>
+              <p>阿里达摩院，27B，中文预训练语言生成</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">07</div>
+            <time datetime="2021-06-01">2021.06</time>
+            <div class="event-body">
+              <h2><span class="latin">CPM-2</span></h2>
+              <p>清华/智源，198B，中文预训练大模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">08</div>
+            <time datetime="2021-06-01">2021.06</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-J</span></h2>
+              <p>EleutherAI，6B，开源 GPT-3 级别模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">09</div>
+            <time datetime="2021-07-01">2021.07</time>
+            <div class="event-body">
+              <h2><span class="latin">ERNIE 3.0</span> / <span class="latin">ERNIE-M</span></h2>
+              <p>百度，10B，统一框架预训练，中英文</p>
+            </div>
+          </article>
+
+          <article class="event phase-decline">
+            <div class="marker" aria-hidden="true">10</div>
+            <time datetime="2021-08-01">2021.08</time>
+            <div class="event-body">
+              <h2><span class="latin">Codex</span></h2>
+              <p>OpenAI，12B，GPT-3 代码微调版，GitHub Copilot 背后模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">11</div>
+            <time datetime="2021-10-01">2021.10</time>
+            <div class="event-body">
+              <h2><span class="latin">FLAN</span> (<span class="latin">Flan-PaLM</span> 等)</h2>
+              <p>Google，指令微调系列</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">12</div>
+            <time datetime="2021-11-01">2021.11</time>
+            <div class="event-body">
+              <h2><span class="latin">Yuan 1.0</span></h2>
+              <p>浪潮信息，245B，中文大模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">13</div>
+            <time datetime="2021-12-01">2021.12</time>
+            <div class="event-body">
+              <h2><span class="latin">ERNIE 3.0 Titan</span></h2>
+              <p>百度，260B，中文最大规模预训练</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">14</div>
+            <time datetime="2021-12-01">2021.12</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-NeoX-20B</span></h2>
+              <p>EleutherAI，20B，当时最大的开源 Transformer</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">15</div>
+            <time datetime="2022-03-01">2022.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Chinchilla</span></h2>
+              <p>DeepMind，70B，&quot;compute-optimal&quot; 理论验证</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">16</div>
+            <time datetime="2022-03-01">2022.03</time>
+            <div class="event-body">
+              <h2><span class="latin">CodeGen</span></h2>
+              <p>Salesforce，up to 16.1B，程序合成</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">17</div>
+            <time datetime="2022-04-01">2022.04</time>
+            <div class="event-body">
+              <h2><span class="latin">DALL</span>·<span class="latin">E 2</span></h2>
+              <p>OpenAI，3.5B，文生图扩散模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">18</div>
+            <time datetime="2022-04-01">2022.04</time>
+            <div class="event-body">
+              <h2><span class="latin">PaLM</span></h2>
+              <p>Google，540B，Pathways 架构，多语言、推理</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">19</div>
+            <time datetime="2022-05-01">2022.05</time>
+            <div class="event-body">
+              <h2><span class="latin">CogView2</span> / <span class="latin">CogVideo</span></h2>
+              <p>清华，4B，文生图/文生视频</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">20</div>
+            <time datetime="2022-05-01">2022.05</time>
+            <div class="event-body">
+              <h2><span class="latin">OPT</span> (<span class="latin">Open Pre-trained Transformer</span>)</h2>
+              <p>Meta，175B，GPT-3 级别开源复现</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">21</div>
+            <time datetime="2022-05-01">2022.05</time>
+            <div class="event-body">
+              <h2><span class="latin">UL2</span></h2>
+              <p>Google，20B，统一预训练框架</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">22</div>
+            <time datetime="2022-06-01">2022.06</time>
+            <div class="event-body">
+              <h2><span class="latin">YaLM</span></h2>
+              <p>Yandex，100B，俄英文开源大模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">23</div>
+            <time datetime="2022-07-01">2022.07</time>
+            <div class="event-body">
+              <h2><span class="latin">BLOOM</span></h2>
+              <p>BigScience (HuggingFace)，176B，多语言开源，46 种语言</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">24</div>
+            <time datetime="2022-07-01">2022.07</time>
+            <div class="event-body">
+              <h2><span class="latin">NLLB</span></h2>
+              <p>Meta，54.5B，No Language Left Behind，200+ 语言翻译</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">25</div>
+            <time datetime="2022-08-01">2022.08</time>
+            <div class="event-body">
+              <h2><span class="latin">GLM-130B</span></h2>
+              <p>清华/智谱 AI，130B，中英双语通用预训练</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">26</div>
+            <time datetime="2022-08-01">2022.08</time>
+            <div class="event-body">
+              <h2><span class="latin">Stable Diffusion</span></h2>
+              <p>Stability AI，890M (UNet)，开源文生图（非纯 LLM，但影响巨大）</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">27</div>
+            <time datetime="2022-09-01">2022.09</time>
+            <div class="event-body">
+              <h2><span class="latin">Sparrow</span></h2>
+              <p>DeepMind，70B，对话 Agent，RLHF</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">28</div>
+            <time datetime="2022-09-01">2022.09</time>
+            <div class="event-body">
+              <h2><span class="latin">Whisper</span></h2>
+              <p>OpenAI，1.5B，语音识别（多语言）</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">29</div>
+            <time datetime="2022-10-01">2022.10</time>
+            <div class="event-body">
+              <h2><span class="latin">Flan-T5</span> / <span class="latin">Flan-PaLM</span></h2>
+              <p>Google，up to 540B，指令微调系列</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">30</div>
+            <time datetime="2022-11-01">2022.11</time>
+            <div class="event-body">
+              <h2><span class="latin">AlexaTM</span></h2>
+              <p>Amazon，20B，序列到序列预训练</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">31</div>
+            <time datetime="2022-11-01">2022.11</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-3.5</span> (<span class="latin">ChatGPT</span>)</h2>
+              <p>OpenAI，~175B，RLHF 对齐，ChatGPT 引爆 AI 热潮</p>
+            </div>
+          </article>
+
+          <article class="event phase-decline">
+            <div class="marker" aria-hidden="true">32</div>
+            <time datetime="2022-11-01">2022.11</time>
+            <div class="event-body">
+              <h2><span class="latin">Galactica</span></h2>
+              <p>Meta，120B，科学文献模型，因幻觉严重下架</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">33</div>
+            <time datetime="2022-11-01">2022.11</time>
+            <div class="event-body">
+              <h2><span class="latin">Wenxin</span> (<span class="latin">ERNIE Bot</span> 前身)</h2>
+              <p>百度，百度对话模型内测</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">34</div>
+            <time datetime="2022-12-01">2022.12</time>
+            <div class="event-body">
+              <h2><span class="latin">ChatGLM</span></h2>
+              <p>智谱 AI / 清华，6B，开源中英双语对话模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">35</div>
+            <time datetime="2022-12-01">2022.12</time>
+            <div class="event-body">
+              <h2><span class="latin">LLaMA</span> (1)</h2>
+              <p>Meta，7B–65B，开源权重泄露，引爆开源 LLM 生态</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">36</div>
+            <time datetime="2023-01-01">2023.01</time>
+            <div class="event-body">
+              <h2><span class="latin">MiniMax</span> (<span class="latin">abab 5</span>/5.5)</h2>
+              <p>MiniMax，未公开，闭源中文对话 AI</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">37</div>
+            <time datetime="2023-01-01">2023.01</time>
+            <div class="event-body">
+              <h2><span class="latin">RWKV</span></h2>
+              <p>RWKV Foundation，up to 14B，线性 RNN 架构替代 Transfor…</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">38</div>
+            <time datetime="2023-03-01">2023.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Alpaca</span></h2>
+              <p>Stanford，7B，用 GPT-3.5 蒸馏 LLaMA</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">39</div>
+            <time datetime="2023-03-01">2023.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Cerebras-GPT</span></h2>
+              <p>Cerebras，up to 13B，CS-2 芯片训练，开源</p>
+            </div>
+          </article>
+
+          <article class="event phase-decline">
+            <div class="marker" aria-hidden="true">40</div>
+            <time datetime="2023-03-01">2023.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Claude 1</span></h2>
+              <p>Anthropic，未公开，Constitutional AI</p>
+            </div>
+          </article>
+
+          <article class="event phase-decline">
+            <div class="marker" aria-hidden="true">41</div>
+            <time datetime="2023-03-01">2023.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Claude Instant</span></h2>
+              <p>Anthropic，低成本快速版本</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">42</div>
+            <time datetime="2023-03-01">2023.03</time>
+            <div class="event-body">
+              <h2><span class="latin">ERNIE Bot</span> / 文心一言</h2>
+              <p>百度，未公开，百度对话 AI 公开发布</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">43</div>
+            <time datetime="2023-03-01">2023.03</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-4</span></h2>
+              <p>OpenAI，未公开（估计 ~1.8T MoE），多模态，当时最强闭源模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">44</div>
+            <time datetime="2023-03-01">2023.03</time>
+            <div class="event-body">
+              <h2><span class="latin">OpenAssistant</span> (<span class="latin">OA</span>)</h2>
+              <p>LAION，12B/30B，社区驱动的对话模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">45</div>
+            <time datetime="2023-03-01">2023.03</time>
+            <div class="event-body">
+              <h2><span class="latin">PaLM-E</span></h2>
+              <p>Google，562B，具身多模态</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">46</div>
+            <time datetime="2023-03-01">2023.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Vicuna</span></h2>
+              <p>LMSYS / UC Berkeley，13B，用户对话数据微调</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">47</div>
+            <time datetime="2023-04-01">2023.04</time>
+            <div class="event-body">
+              <h2><span class="latin">Dolly 2.0</span></h2>
+              <p>Databricks，12B，开源指令微调</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">48</div>
+            <time datetime="2023-04-01">2023.04</time>
+            <div class="event-body">
+              <h2><span class="latin">RedPajama</span></h2>
+              <p>Together，7B，开源 LLaMA 复现</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">49</div>
+            <time datetime="2023-04-01">2023.04</time>
+            <div class="event-body">
+              <h2><span class="latin">SenseNova</span> (商汤)</h2>
+              <p>商汤科技，未公开，日日新大模型体系</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">50</div>
+            <time datetime="2023-04-01">2023.04</time>
+            <div class="event-body">
+              <h2><span class="latin">StableLM</span></h2>
+              <p>Stability AI，up to 7B，开源语言模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">51</div>
+            <time datetime="2023-05-01">2023.05</time>
+            <div class="event-body">
+              <h2><span class="latin">Falcon</span> (7<span class="latin">B</span>/40<span class="latin">B</span>/180<span class="latin">B</span>)</h2>
+              <p>TII (阿联酋)，7B/40B/180B，开源，RefinedWeb 数据集</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">52</div>
+            <time datetime="2023-05-01">2023.05</time>
+            <div class="event-body">
+              <h2><span class="latin">PaLM 2</span></h2>
+              <p>Google，未公开，改进多语言、推理</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">53</div>
+            <time datetime="2023-05-01">2023.05</time>
+            <div class="event-body">
+              <h2><span class="latin">Spark</span> (星火) <span class="latin">V1</span>/<span class="latin">V2</span></h2>
+              <p>讯飞，未公开，科大讯飞对话 AI</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">54</div>
+            <time datetime="2023-05-01">2023.05</time>
+            <div class="event-body">
+              <h2><span class="latin">StarCoder</span></h2>
+              <p>BigCode (HuggingFace)，15.5B，开源代码模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">55</div>
+            <time datetime="2023-06-01">2023.06</time>
+            <div class="event-body">
+              <h2><span class="latin">Aquila</span> / <span class="latin">Aquila2</span></h2>
+              <p>智源研究院，up to 33B，中文开源模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">56</div>
+            <time datetime="2023-06-01">2023.06</time>
+            <div class="event-body">
+              <h2><span class="latin">Baichuan-7B</span> / 13<span class="latin">B</span></h2>
+              <p>百川智能，7B/13B，中文开源对话</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">57</div>
+            <time datetime="2023-06-01">2023.06</time>
+            <div class="event-body">
+              <h2><span class="latin">ChatGLM2</span> / <span class="latin">ChatGLM3</span></h2>
+              <p>智谱 AI，6B，开源中文对话，工具调用</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">58</div>
+            <time datetime="2023-06-01">2023.06</time>
+            <div class="event-body">
+              <h2><span class="latin">Orca</span></h2>
+              <p>Microsoft，13B，GPT-4 蒸馏推理能力</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">59</div>
+            <time datetime="2023-06-01">2023.06</time>
+            <div class="event-body">
+              <h2><span class="latin">Phi-1</span></h2>
+              <p>Microsoft，1.3B，小模型代码生成</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">60</div>
+            <time datetime="2023-06-01">2023.06</time>
+            <div class="event-body">
+              <h2><span class="latin">Tianwang</span> (<span class="latin">Skywork</span>)</h2>
+              <p>昆仑万维，13B，开源中文模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">61</div>
+            <time datetime="2023-06-01">2023.06</time>
+            <div class="event-body">
+              <h2><span class="latin">WizardLM</span> / <span class="latin">WizardCoder</span></h2>
+              <p>Microsoft，up to 34B，Evol-Instruct 方法</p>
+            </div>
+          </article>
+
+          <article class="event phase-decline">
+            <div class="marker" aria-hidden="true">62</div>
+            <time datetime="2023-07-01">2023.07</time>
+            <div class="event-body">
+              <h2><span class="latin">Claude 2</span></h2>
+              <p>Anthropic，未公开，100K 上下文</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">63</div>
+            <time datetime="2023-07-01">2023.07</time>
+            <div class="event-body">
+              <h2><span class="latin">InternLM</span></h2>
+              <p>上海 AI 实验室，7B/20B，开源中文模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">64</div>
+            <time datetime="2023-07-01">2023.07</time>
+            <div class="event-body">
+              <h2><span class="latin">LLaMA 2</span></h2>
+              <p>Meta，7B–70B，商用许可开源，对话微调版</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">65</div>
+            <time datetime="2023-07-01">2023.07</time>
+            <div class="event-body">
+              <h2><span class="latin">XGen</span></h2>
+              <p>Salesforce，7B，8K 上下文开源</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">66</div>
+            <time datetime="2023-08-01">2023.08</time>
+            <div class="event-body">
+              <h2><span class="latin">Code Llama</span></h2>
+              <p>Meta，7B–34B，LLaMA 2 代码专项微调</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">67</div>
+            <time datetime="2023-08-01">2023.08</time>
+            <div class="event-body">
+              <h2><span class="latin">Qwen</span> (通义千问) 7<span class="latin">B</span>/14<span class="latin">B</span></h2>
+              <p>阿里云，7B/14B，中英双语开源</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">68</div>
+            <time datetime="2023-09-01">2023.09</time>
+            <div class="event-body">
+              <h2><span class="latin">Baichuan-2</span> (7<span class="latin">B</span>/13<span class="latin">B</span>)</h2>
+              <p>百川智能，7B/13B，改进训练数据和方法</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">69</div>
+            <time datetime="2023-09-01">2023.09</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-4V</span> (<span class="latin">Vision</span>)</h2>
+              <p>OpenAI，GPT-4 视觉版本</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">70</div>
+            <time datetime="2023-09-01">2023.09</time>
+            <div class="event-body">
+              <h2><span class="latin">Mistral 7B</span></h2>
+              <p>Mistral AI，7B，性能超越 LLaMA 2 13B</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">71</div>
+            <time datetime="2023-09-01">2023.09</time>
+            <div class="event-body">
+              <h2><span class="latin">Phi-1.5</span></h2>
+              <p>Microsoft，1.3B，通用小模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">72</div>
+            <time datetime="2023-10-01">2023.10</time>
+            <div class="event-body">
+              <h2><span class="latin">Moonshot</span> (<span class="latin">Kimi</span>)</h2>
+              <p>月之暗面，未公开，长文本处理能力强</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">73</div>
+            <time datetime="2023-11-01">2023.11</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-4 Turbo</span></h2>
+              <p>OpenAI，128K 上下文，知识截止更新</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">74</div>
+            <time datetime="2023-11-01">2023.11</time>
+            <div class="event-body">
+              <h2><span class="latin">Grok-1</span></h2>
+              <p>xAI (Elon Musk)，314B，X/Twitter 集成</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">75</div>
+            <time datetime="2023-11-01">2023.11</time>
+            <div class="event-body">
+              <h2><span class="latin">Qwen-72B</span></h2>
+              <p>阿里云，72B，大规模中文开源模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">76</div>
+            <time datetime="2023-11-01">2023.11</time>
+            <div class="event-body">
+              <h2><span class="latin">Yi</span> (6<span class="latin">B</span>/34<span class="latin">B</span>)</h2>
+              <p>零一万物 (李开复)，6B/34B，开源中英双语</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">77</div>
+            <time datetime="2023-12-01">2023.12</time>
+            <div class="event-body">
+              <h2><span class="latin">Gemini 1.0</span> (<span class="latin">Ultra</span>/<span class="latin">Pro</span>/<span class="latin">Nano</span>)</h2>
+              <p>Google DeepMind，未公开，多模态（文本/图像/音频/视频）</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">78</div>
+            <time datetime="2023-12-01">2023.12</time>
+            <div class="event-body">
+              <h2><span class="latin">Mamba</span></h2>
+              <p>CMU / Tri Dao，up to 2.8B，SSM 架构，替代 Transformer</p>
+            </div>
+          </article>
+
+          <article class="event phase-rise">
+            <div class="marker" aria-hidden="true">79</div>
+            <time datetime="2023-12-01">2023.12</time>
+            <div class="event-body">
+              <h2><span class="latin">Mixtral 8x7B</span></h2>
+              <p>Mistral AI，46.7B (MoE)，开源 MoE 架构</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">80</div>
+            <time datetime="2024-01-01">2024.01</time>
+            <div class="event-body">
+              <h2><span class="latin">GLM-4</span> / <span class="latin">GLM-4V</span></h2>
+              <p>智谱 AI，未公开 / 开源版 9B，通用 + 视觉</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">81</div>
+            <time datetime="2024-01-01">2024.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Hunyuan</span> (混元)</h2>
+              <p>腾讯，未公开，腾讯旗舰对话模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">82</div>
+            <time datetime="2024-01-01">2024.01</time>
+            <div class="event-body">
+              <h2><span class="latin">InternLM 2</span> / 2.5</h2>
+              <p>上海 AI 实验室，7B/20B，开源中文模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">83</div>
+            <time datetime="2024-01-01">2024.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Qwen 1.5</span> (系列)</h2>
+              <p>阿里云，0.5B–72B，全面开源矩阵</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">84</div>
+            <time datetime="2024-01-01">2024.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Spark</span> (星火) <span class="latin">V3</span>/<span class="latin">V3.5</span>/<span class="latin">V4</span></h2>
+              <p>讯飞，未公开，多模态升级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">85</div>
+            <time datetime="2024-02-01">2024.02</time>
+            <div class="event-body">
+              <h2><span class="latin">Gemini 1.5 Pro</span></h2>
+              <p>Google DeepMind，未公开，百万 token 上下文窗口</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">86</div>
+            <time datetime="2024-02-01">2024.02</time>
+            <div class="event-body">
+              <h2><span class="latin">Gemma</span> (2<span class="latin">B</span>/7<span class="latin">B</span>)</h2>
+              <p>Google，2B/7B，开源，基于 Gemini 技术</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">87</div>
+            <time datetime="2024-02-01">2024.02</time>
+            <div class="event-body">
+              <h2><span class="latin">MiniCPM</span></h2>
+              <p>面壁智能，2B，端侧推理，高效</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">88</div>
+            <time datetime="2024-02-01">2024.02</time>
+            <div class="event-body">
+              <h2><span class="latin">Mistral Large</span></h2>
+              <p>Mistral AI，未公开，闭源旗舰模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">89</div>
+            <time datetime="2024-02-01">2024.02</time>
+            <div class="event-body">
+              <h2><span class="latin">Phi-2</span></h2>
+              <p>Microsoft，2.7B，小模型高性能</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">90</div>
+            <time datetime="2024-02-01">2024.02</time>
+            <div class="event-body">
+              <h2><span class="latin">SeaLLMs</span></h2>
+              <p>AI Singapore，7B，东南亚语言</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">91</div>
+            <time datetime="2024-03-01">2024.03</time>
+            <div class="event-body">
+              <h2><span class="latin">C4AI</span> (<span class="latin">Command R</span> 系列)</h2>
+              <p>Cohere，35B–104B，开源企业模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">92</div>
+            <time datetime="2024-03-01">2024.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Claude 3</span> (<span class="latin">Haiku</span>/<span class="latin">Sonnet</span>/<span class="latin">Opus</span>)</h2>
+              <p>Anthropic，未公开，三档模型，200K 上下文</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">93</div>
+            <time datetime="2024-03-01">2024.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Command R</span> / <span class="latin">R+</span></h2>
+              <p>Cohere，35B/104B，RAG 优化，企业级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">94</div>
+            <time datetime="2024-03-01">2024.03</time>
+            <div class="event-body">
+              <h2><span class="latin">DBRX</span></h2>
+              <p>Databricks，132B (MoE)，开源 MoE</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">95</div>
+            <time datetime="2024-03-01">2024.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Grok-1.5</span> / 1.5<span class="latin">V</span></h2>
+              <p>xAI，未公开，改进推理 + 视觉</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">96</div>
+            <time datetime="2024-03-01">2024.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Jamba</span></h2>
+              <p>AI21 Labs，52B (MoE)，Mamba + Transformer 混合架构</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">97</div>
+            <time datetime="2024-03-01">2024.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Kimi</span> (<span class="latin">Moonshot-V1</span>)</h2>
+              <p>月之暗面，未公开，200 万字超长上下文</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">98</div>
+            <time datetime="2024-03-01">2024.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Step-1</span> / <span class="latin">Step-2</span></h2>
+              <p>阶跃星辰，未公开，中文多模态</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">99</div>
+            <time datetime="2024-03-01">2024.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Yi-VL</span></h2>
+              <p>零一万物，6B/34B，多模态版本</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">100</div>
+            <time datetime="2024-03-01">2024.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Yuan 2.0</span></h2>
+              <p>浪潮信息，up to 102B，开源升级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">101</div>
+            <time datetime="2024-04-01">2024.04</time>
+            <div class="event-body">
+              <h2><span class="latin">Arctic</span></h2>
+              <p>Snowflake，480B (MoE)，开源，企业数据仓库优化</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">102</div>
+            <time datetime="2024-04-01">2024.04</time>
+            <div class="event-body">
+              <h2><span class="latin">InternVL</span></h2>
+              <p>上海 AI 实验室，up to 26B，开源视觉语言模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">103</div>
+            <time datetime="2024-04-01">2024.04</time>
+            <div class="event-body">
+              <h2><span class="latin">LLaMA 3</span> (8<span class="latin">B</span>/70<span class="latin">B</span>)</h2>
+              <p>Meta，8B/70B，开源新标杆</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">104</div>
+            <time datetime="2024-04-01">2024.04</time>
+            <div class="event-body">
+              <h2><span class="latin">MiniCPM-V</span></h2>
+              <p>面壁智能，2B–8B，端侧多模态</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">105</div>
+            <time datetime="2024-04-01">2024.04</time>
+            <div class="event-body">
+              <h2><span class="latin">Mixtral 8x22B</span></h2>
+              <p>Mistral AI，141B (MoE)，大规模 MoE 开源</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">106</div>
+            <time datetime="2024-04-01">2024.04</time>
+            <div class="event-body">
+              <h2><span class="latin">Phi-3</span> (<span class="latin">Mini</span>/<span class="latin">Small</span>/<span class="latin">Medium</span>)</h2>
+              <p>Microsoft，3.8B/7B/14B，手机可运行的小模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">107</div>
+            <time datetime="2024-05-01">2024.05</time>
+            <div class="event-body">
+              <h2><span class="latin">Aya 23</span></h2>
+              <p>Cohere，8B/35B，多语言开源</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">108</div>
+            <time datetime="2024-05-01">2024.05</time>
+            <div class="event-body">
+              <h2><span class="latin">Codestral</span></h2>
+              <p>Mistral AI，22B，代码生成专项</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">109</div>
+            <time datetime="2024-05-01">2024.05</time>
+            <div class="event-body">
+              <h2><span class="latin">DeepSeek-V2</span></h2>
+              <p>DeepSeek (幻方量化)，21B active / 236B total (MoE)，…</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">110</div>
+            <time datetime="2024-05-01">2024.05</time>
+            <div class="event-body">
+              <h2><span class="latin">Doubao</span> (豆包)</h2>
+              <p>字节跳动，未公开，字节跳动对话 AI</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">111</div>
+            <time datetime="2024-05-01">2024.05</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-4o</span></h2>
+              <p>OpenAI，未公开，原生多模态（音频/视觉/文本同一模型）</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">112</div>
+            <time datetime="2024-05-01">2024.05</time>
+            <div class="event-body">
+              <h2><span class="latin">Gemini 1.5 Flash</span></h2>
+              <p>Google DeepMind，轻量高速版</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">113</div>
+            <time datetime="2024-05-01">2024.05</time>
+            <div class="event-body">
+              <h2><span class="latin">Granite</span> (系列)</h2>
+              <p>IBM，up to 34B，企业级开源</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">114</div>
+            <time datetime="2024-05-01">2024.05</time>
+            <div class="event-body">
+              <h2><span class="latin">Reka</span> (<span class="latin">Core</span>/<span class="latin">Flash</span>/<span class="latin">Edge</span>)</h2>
+              <p>Reka AI，未公开，多模态</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">115</div>
+            <time datetime="2024-05-01">2024.05</time>
+            <div class="event-body">
+              <h2><span class="latin">Yi-1.5</span> (6<span class="latin">B</span>/9<span class="latin">B</span>/34<span class="latin">B</span>)</h2>
+              <p>零一万物，up to 34B，改进开源</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">116</div>
+            <time datetime="2024-06-01">2024.06</time>
+            <div class="event-body">
+              <h2><span class="latin">Claude 3.5 Sonnet</span></h2>
+              <p>Anthropic，编程能力大幅提升</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">117</div>
+            <time datetime="2024-06-01">2024.06</time>
+            <div class="event-body">
+              <h2><span class="latin">CogVideoX</span></h2>
+              <p>智谱 AI，5B，文生视频</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">118</div>
+            <time datetime="2024-06-01">2024.06</time>
+            <div class="event-body">
+              <h2><span class="latin">DeepSeek-Coder-V2</span></h2>
+              <p>DeepSeek，21B active / 236B total，代码专项 MoE</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">119</div>
+            <time datetime="2024-06-01">2024.06</time>
+            <div class="event-body">
+              <h2><span class="latin">Gemma 2</span> (9<span class="latin">B</span>/27<span class="latin">B</span>)</h2>
+              <p>Google，9B/27B，开源升级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">120</div>
+            <time datetime="2024-06-01">2024.06</time>
+            <div class="event-body">
+              <h2><span class="latin">MAP-Neo</span></h2>
+              <p>澜舟科技，7B，开源中文</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">121</div>
+            <time datetime="2024-06-01">2024.06</time>
+            <div class="event-body">
+              <h2><span class="latin">Nemotron-4 340B</span></h2>
+              <p>NVIDIA，340B，开源，合成数据生成</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">122</div>
+            <time datetime="2024-06-01">2024.06</time>
+            <div class="event-body">
+              <h2><span class="latin">Qwen 2</span> (系列)</h2>
+              <p>阿里云，0.5B–72B，改进架构</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">123</div>
+            <time datetime="2024-07-01">2024.07</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-4o mini</span></h2>
+              <p>OpenAI，小型高效版</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">124</div>
+            <time datetime="2024-07-01">2024.07</time>
+            <div class="event-body">
+              <h2><span class="latin">LLaMA 3.1</span> (8<span class="latin">B</span>/70<span class="latin">B</span>/405<span class="latin">B</span>)</h2>
+              <p>Meta，up to 405B，最大开源模型（当时）</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">125</div>
+            <time datetime="2024-07-01">2024.07</time>
+            <div class="event-body">
+              <h2><span class="latin">Mathstral</span></h2>
+              <p>Mistral AI，7B，数学推理专项</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">126</div>
+            <time datetime="2024-07-01">2024.07</time>
+            <div class="event-body">
+              <h2><span class="latin">SmolLM</span></h2>
+              <p>HuggingFace，135M–1.7B，超小模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">127</div>
+            <time datetime="2024-08-01">2024.08</time>
+            <div class="event-body">
+              <h2><span class="latin">Doubao-Pro</span> / <span class="latin">Lite</span></h2>
+              <p>字节跳动，未公开，分级商用</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">128</div>
+            <time datetime="2024-08-01">2024.08</time>
+            <div class="event-body">
+              <h2><span class="latin">Grok-2</span></h2>
+              <p>xAI，未公开，图像生成集成</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">129</div>
+            <time datetime="2024-08-01">2024.08</time>
+            <div class="event-body">
+              <h2><span class="latin">Phi-3.5 MoE</span> / <span class="latin">Vision</span></h2>
+              <p>Microsoft，up to 42B (MoE)，多模态 + MoE</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">130</div>
+            <time datetime="2024-09-01">2024.09</time>
+            <div class="event-body">
+              <h2><span class="latin">LLaMA 3.2</span> (1<span class="latin">B</span>/3<span class="latin">B</span>/11<span class="latin">B</span>/90<span class="latin">B</span>)</h2>
+              <p>Meta，up to 90B，多模态（视觉）开源</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">131</div>
+            <time datetime="2024-09-01">2024.09</time>
+            <div class="event-body">
+              <h2><span class="latin">Mars</span> (火星)</h2>
+              <p>百川智能，16B，百川最新开源</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">132</div>
+            <time datetime="2024-09-01">2024.09</time>
+            <div class="event-body">
+              <h2><span class="latin">Mistral Small</span> / <span class="latin">Medium</span></h2>
+              <p>Mistral AI，商用分级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">133</div>
+            <time datetime="2024-09-01">2024.09</time>
+            <div class="event-body">
+              <h2><span class="latin">Pixtral 12B</span></h2>
+              <p>Mistral AI，12B，多模态开源</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">134</div>
+            <time datetime="2024-09-01">2024.09</time>
+            <div class="event-body">
+              <h2><span class="latin">Qwen 2.5</span> (系列)</h2>
+              <p>阿里云，0.5B–72B，开源旗舰</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">135</div>
+            <time datetime="2024-09-01">2024.09</time>
+            <div class="event-body">
+              <h2><span class="latin">o1</span> (<span class="latin">Strawberry</span>)</h2>
+              <p>OpenAI，未公开，推理模型，思维链</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">136</div>
+            <time datetime="2024-09-01">2024.09</time>
+            <div class="event-body">
+              <h2><span class="latin">o1-mini</span> / <span class="latin">o1-pro</span></h2>
+              <p>OpenAI，o1 的精简/专业版</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">137</div>
+            <time datetime="2024-10-01">2024.10</time>
+            <div class="event-body">
+              <h2><span class="latin">Claude 3.5 Haiku</span></h2>
+              <p>Anthropic，快速版升级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">138</div>
+            <time datetime="2024-10-01">2024.10</time>
+            <div class="event-body">
+              <h2><span class="latin">Llama-3-Nemotron</span></h2>
+              <p>NVIDIA，up to 70B，基于 LLaMA 3 微调</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">139</div>
+            <time datetime="2024-11-01">2024.11</time>
+            <div class="event-body">
+              <h2><span class="latin">Hunyuan-Large</span></h2>
+              <p>腾讯，389B (MoE)，开源 MoE 大模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">140</div>
+            <time datetime="2024-11-01">2024.11</time>
+            <div class="event-body">
+              <h2><span class="latin">QwQ</span> (<span class="latin">Qwen with Questions</span>)</h2>
+              <p>阿里云，推理模型（类似 o1）</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">141</div>
+            <time datetime="2024-11-01">2024.11</time>
+            <div class="event-body">
+              <h2><span class="latin">Qwen2.5-Coder</span></h2>
+              <p>阿里云，up to 32B，代码专项</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">142</div>
+            <time datetime="2024-12-01">2024.12</time>
+            <div class="event-body">
+              <h2><span class="latin">DeepSeek-V3</span></h2>
+              <p>DeepSeek，37B active / 671B total (MoE)，多 token…</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">143</div>
+            <time datetime="2024-12-01">2024.12</time>
+            <div class="event-body">
+              <h2><span class="latin">LLaMA 3.3</span> (70<span class="latin">B</span>)</h2>
+              <p>Meta，70B，对话能力优化</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">144</div>
+            <time datetime="2024-12-01">2024.12</time>
+            <div class="event-body">
+              <h2><span class="latin">o3</span> / <span class="latin">o3-mini</span></h2>
+              <p>OpenAI，推理模型升级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">145</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Aquila-2</span> / <span class="latin">FlagOpen</span></h2>
+              <p>智源研究院，up to 34B，开源中文持续更新</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">146</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Claude 3.5 Sonnet</span> (<span class="latin">v2</span>)</h2>
+              <p>Anthropic，持续改进</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">147</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Codestral 25.01</span></h2>
+              <p>Mistral AI，22B，代码升级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">148</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">DeepSeek-R1</span></h2>
+              <p>DeepSeek，671B (MoE)，开源推理模型，性能比肩 o1</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">149</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">DeepSeek-R1-Lite</span> / <span class="latin">Distill</span></h2>
+              <p>DeepSeek，1.5B–70B，蒸馏版本（开源）</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">150</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Doubao-1.5-Pro</span></h2>
+              <p>字节跳动，MoE，改进版</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">151</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">GLM-4-Plus</span> / <span class="latin">GLM-Z1</span></h2>
+              <p>智谱 AI，未公开，旗舰升级 + 推理版</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">152</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Granite 3.x</span> (系列)</h2>
+              <p>IBM，up to 34B，企业级开源持续更新</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">153</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Hunyuan-Large</span> 开源版</h2>
+              <p>腾讯，389B，开源 MoE</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">154</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">InternLM 3</span></h2>
+              <p>上海 AI 实验室，7B/20B，开源，工具调用增强</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">155</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Kimi 2</span> / <span class="latin">Kimi k1.5</span></h2>
+              <p>月之暗面，未公开，推理模型 + 多模态</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">156</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">LLaMA 4 Behemoth</span></h2>
+              <p>Meta，288B active / 超过 2T total，训练中</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">157</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">MAI</span> (<span class="latin">Microsoft AI</span>) 系列</h2>
+              <p>Microsoft，多模态推理</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">158</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">MiniCPM 3.0</span> / 4.0</h2>
+              <p>面壁智能，up to 8B，端侧多模态升级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">159</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">MiniMax-01</span> / <span class="latin">Text-01</span></h2>
+              <p>MiniMax，456B (MoE)，开源 MoE</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">160</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">MiniMax-Text-01</span></h2>
+              <p>MiniMax，456B，超长上下文（400 万 token）</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">161</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Mistral Large 2</span></h2>
+              <p>Mistral AI，123B，改进闭源旗舰</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">162</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Mistral Small 3</span></h2>
+              <p>Mistral AI，24B，开源高效</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">163</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">OpenAI</span> 实时语音/视频</h2>
+              <p>OpenAI，原生语音对话</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">164</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Qwen 2.5-Max</span></h2>
+              <p>阿里云，MoE（未公开），闭源旗舰</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">165</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">SmolLM2</span></h2>
+              <p>HuggingFace，up to 1.7B，超小模型升级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">166</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Sonar</span> (<span class="latin">Pro</span>/<span class="latin">Reasoning</span>)</h2>
+              <p>Perplexity，搜索增强推理</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">167</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Spark 4.0 Ultra</span></h2>
+              <p>讯飞，未公开，全模态</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">168</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">Yi-Lightning</span></h2>
+              <p>零一万物，高效推理</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">169</div>
+            <time datetime="2025-01-01">2025.01</time>
+            <div class="event-body">
+              <h2><span class="latin">o3</span></h2>
+              <p>OpenAI，未公开，推理模型正式版</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">170</div>
+            <time datetime="2025-02-01">2025.02</time>
+            <div class="event-body">
+              <h2><span class="latin">Claude 3.7 Sonnet</span></h2>
+              <p>Anthropic，混合推理（思考模式）</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">171</div>
+            <time datetime="2025-02-01">2025.02</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-4.5</span></h2>
+              <p>OpenAI，未公开，规模扩大，情商提升</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">172</div>
+            <time datetime="2025-02-01">2025.02</time>
+            <div class="event-body">
+              <h2><span class="latin">Gemini 2.0 Flash</span></h2>
+              <p>Google DeepMind，高效多模态</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">173</div>
+            <time datetime="2025-02-01">2025.02</time>
+            <div class="event-body">
+              <h2><span class="latin">Gemini 2.0 Flash Lite</span></h2>
+              <p>Google DeepMind，更轻量</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">174</div>
+            <time datetime="2025-02-01">2025.02</time>
+            <div class="event-body">
+              <h2><span class="latin">Gemma 3</span> (1<span class="latin">B</span>/4<span class="latin">B</span>/12<span class="latin">B</span>/27<span class="latin">B</span>)</h2>
+              <p>Google，up to 27B，开源多模态</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">175</div>
+            <time datetime="2025-02-01">2025.02</time>
+            <div class="event-body">
+              <h2><span class="latin">Grok-3</span> / <span class="latin">Grok-3 Mini</span></h2>
+              <p>xAI，未公开，推理能力大幅提升</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">176</div>
+            <time datetime="2025-02-01">2025.02</time>
+            <div class="event-body">
+              <h2><span class="latin">Phi-4</span></h2>
+              <p>Microsoft，14B，小模型旗舰</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">177</div>
+            <time datetime="2025-02-01">2025.02</time>
+            <div class="event-body">
+              <h2><span class="latin">R1-1776</span></h2>
+              <p>Perplexity，基于 DeepSeek-R1 微调</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">178</div>
+            <time datetime="2025-02-01">2025.02</time>
+            <div class="event-body">
+              <h2><span class="latin">Samba-1</span></h2>
+              <p>SambaNova，未公开，芯片 + 模型一体</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">179</div>
+            <time datetime="2025-03-01">2025.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Aya Vision</span></h2>
+              <p>Cohere，8B/32B，多语言多模态</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">180</div>
+            <time datetime="2025-03-01">2025.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Command A</span></h2>
+              <p>Cohere，111B (MoE)，企业 RAG</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">181</div>
+            <time datetime="2025-03-01">2025.03</time>
+            <div class="event-body">
+              <h2><span class="latin">DeepSeek-V3-0324</span></h2>
+              <p>DeepSeek，671B (MoE)，V3 改进版</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">182</div>
+            <time datetime="2025-03-01">2025.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Doubao</span> (<span class="latin">Seed</span> / 字节种子)</h2>
+              <p>字节跳动，推理模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">183</div>
+            <time datetime="2025-03-01">2025.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Gemini 2.5 Pro</span> (<span class="latin">Preview</span>)</h2>
+              <p>Google DeepMind，推理增强，百万 token 上下文</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">184</div>
+            <time datetime="2025-03-01">2025.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Hunyuan-T1</span></h2>
+              <p>腾讯，MoE，推理模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">185</div>
+            <time datetime="2025-03-01">2025.03</time>
+            <div class="event-body">
+              <h2><span class="latin">InternVL 2.5</span> / 3</h2>
+              <p>上海 AI 实验室，up to 78B，开源视觉语言模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">186</div>
+            <time datetime="2025-03-01">2025.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Phi-4-Mini</span></h2>
+              <p>Microsoft，3.8B，端侧推理</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">187</div>
+            <time datetime="2025-03-01">2025.03</time>
+            <div class="event-body">
+              <h2><span class="latin">Step-2</span></h2>
+              <p>阶跃星辰，未公开，万亿参数 MoE</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">188</div>
+            <time datetime="2025-04-01">2025.04</time>
+            <div class="event-body">
+              <h2><span class="latin">LLaMA 4</span> (<span class="latin">Scout</span>/<span class="latin">Maverick</span>)</h2>
+              <p>Meta，17B active / 109B total (MoE) 等，MoE 架构，多模…</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">189</div>
+            <time datetime="2025-04-01">2025.04</time>
+            <div class="event-body">
+              <h2><span class="latin">Llama-4-Maverick</span></h2>
+              <p>Meta，400B total (MoE)，开源多模态</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">190</div>
+            <time datetime="2025-04-01">2025.04</time>
+            <div class="event-body">
+              <h2><span class="latin">Llama-4-Scout</span></h2>
+              <p>Meta，109B total (MoE)，10M token 上下文</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">191</div>
+            <time datetime="2025-04-01">2025.04</time>
+            <div class="event-body">
+              <h2><span class="latin">Moonlight</span> (月之光)</h2>
+              <p>Moonshot，16B MoE，开源 MoE</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">192</div>
+            <time datetime="2025-04-01">2025.04</time>
+            <div class="event-body">
+              <h2><span class="latin">Qwen3</span> (系列)</h2>
+              <p>阿里云，0.6B–235B (MoE)，开源，思考/非思考双模式</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">193</div>
+            <time datetime="2025-04-01">2025.04</time>
+            <div class="event-body">
+              <h2><span class="latin">o4-mini</span></h2>
+              <p>OpenAI，高效推理模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">194</div>
+            <time datetime="2025-05-01">2025.05</time>
+            <div class="event-body">
+              <h2><span class="latin">DeepSeek-Prover-V2</span></h2>
+              <p>DeepSeek，671B，数学证明专项</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">195</div>
+            <time datetime="2025-05-01">2025.05</time>
+            <div class="event-body">
+              <h2><span class="latin">GLM-4.1V</span> / <span class="latin">CogVideoX-2</span></h2>
+              <p>智谱 AI，视觉/视频升级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">196</div>
+            <time datetime="2025-05-01">2025.05</time>
+            <div class="event-body">
+              <h2><span class="latin">Grok-3V</span></h2>
+              <p>xAI，视觉多模态</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">197</div>
+            <time datetime="2025-05-01">2025.05</time>
+            <div class="event-body">
+              <h2><span class="latin">Mistral Medium 3</span></h2>
+              <p>Mistral AI，未公开，企业级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">198</div>
+            <time datetime="2025-05-01">2025.05</time>
+            <div class="event-body">
+              <h2><span class="latin">Qwen3-Coder</span></h2>
+              <p>阿里云，代码专项</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">199</div>
+            <time datetime="2025-05-22">2025.05.22</time>
+            <div class="event-body">
+              <h2><span class="latin">Claude 4</span> (<span class="latin">Opus</span>/<span class="latin">Sonnet</span>)</h2>
+              <p>Anthropic，未公开，Opus 4 与 Sonnet 4，长程任务、代码和 Agent…</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">200</div>
+            <time datetime="2025-06-01">2025.06</time>
+            <div class="event-body">
+              <h2><span class="latin">Jamba 1.5</span> / <span class="latin">Jamba 1.5 Mini</span></h2>
+              <p>AI21 Labs，up to 398B (MoE)，Mamba-2 + Transform…</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">201</div>
+            <time datetime="2025-06-01">2025.06</time>
+            <div class="event-body">
+              <h2><span class="latin">Magistral</span></h2>
+              <p>Mistral AI，推理模型（类似 o1）</p>
+            </div>
+          </article>
+
+          <article class="event phase-decline">
+            <div class="marker" aria-hidden="true">202</div>
+            <time datetime="2025-08-07">2025.08.07</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-5</span></h2>
+              <p>OpenAI，未公开，统一 GPT-5 系统，面向写作、代码、健康、视觉和推理</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">203</div>
+            <time datetime="2025-11-12">2025.11.12</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-5.1</span></h2>
+              <p>OpenAI，未公开，GPT-5 系列迭代，Instant 与 Thinking 两种形态</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">204</div>
+            <time datetime="2025-11-24">2025.11.24</time>
+            <div class="event-body">
+              <h2><span class="latin">Claude Opus 4.5</span></h2>
+              <p>Anthropic，未公开，Opus 系列迭代，编码、Agent 和企业工作流增强</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">205</div>
+            <time datetime="2025-12-11">2025.12.11</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-5.2</span></h2>
+              <p>OpenAI，未公开，面向专业知识工作和长程 Agent 的 GPT-5 系列升级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">206</div>
+            <time datetime="2026-01-25">2026.01.25</time>
+            <div class="event-body">
+              <h2><span class="latin">Qwen3-Max-Thinking</span></h2>
+              <p>阿里云，未公开，Qwen3-Max 推理增强版，长链路推理和数学能力升级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">207</div>
+            <time datetime="2026-02-05">2026.02.05</time>
+            <div class="event-body">
+              <h2><span class="latin">Claude Opus 4.6</span></h2>
+              <p>Anthropic，未公开，Opus 4 系列迭代，代码、长程工具调用和复杂规划增强</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">208</div>
+            <time datetime="2026-02-19">2026.02.19</time>
+            <div class="event-body">
+              <h2><span class="latin">Gemini 3.1 Flash</span></h2>
+              <p>Google DeepMind，未公开，Gemini 3.1 高效版，面向低延迟多模态任务</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">209</div>
+            <time datetime="2026-02-19">2026.02.19</time>
+            <div class="event-body">
+              <h2><span class="latin">Gemini 3.1 Pro</span></h2>
+              <p>Google DeepMind，未公开，Gemini 3 系列推理旗舰升级，长上下文和多模态…</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">210</div>
+            <time datetime="2026-03-04">2026.03.04</time>
+            <div class="event-body">
+              <h2><span class="latin">Gemini 3.1 Flash-Lite</span></h2>
+              <p>Google DeepMind，未公开，Gemini 3.1 轻量高吞吐版本</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">211</div>
+            <time datetime="2026-03-05">2026.03.05</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-5.4</span></h2>
+              <p>OpenAI，未公开，GPT-5 系列推理与工具调用升级，企业和开发者模型</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">212</div>
+            <time datetime="2026-04-07">2026.04.07</time>
+            <div class="event-body">
+              <h2><span class="latin">Grok 4.20</span></h2>
+              <p>xAI，未公开，Grok 4 系列升级，系统卡披露了推理和安全评测</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">213</div>
+            <time datetime="2026-04-16">2026.04.16</time>
+            <div class="event-body">
+              <h2><span class="latin">Claude Opus 4.7</span></h2>
+              <p>Anthropic，未公开，Opus 4 系列升级，长任务稳定性、代码和研究能力增强</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">214</div>
+            <time datetime="2026-04-23">2026.04.23</time>
+            <div class="event-body">
+              <h2><span class="latin">GPT-5.5</span></h2>
+              <p>OpenAI，未公开，GPT-5 系列重大升级，科学、法律、写作和复杂编码能力增强</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">215</div>
+            <time datetime="2026-04-24">2026.04.24</time>
+            <div class="event-body">
+              <h2><span class="latin">DeepSeek-V4</span> / <span class="latin">V4-Flash</span></h2>
+              <p>DeepSeek，MoE（未公开），V4 基座与高效 Flash 版本，中文、代码和推理能力…</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">216</div>
+            <time datetime="2026-05-20">2026.05.20</time>
+            <div class="event-body">
+              <h2><span class="latin">Qwen3.7-Max</span></h2>
+              <p>阿里云，未公开，Qwen3.7 旗舰版，知识、数学、代码和多语言能力升级</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">217</div>
+            <time datetime="2026-05-28">2026.05.28</time>
+            <div class="event-body">
+              <h2><span class="latin">Claude Opus 4.8</span></h2>
+              <p>Anthropic，未公开，Anthropic 新旗舰，编码、研究、数学和长程 Agent …</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">218</div>
+            <time datetime="2026-06-01">2026.06</time>
+            <div class="event-body">
+              <h2><span class="latin">MiniMax M3</span></h2>
+              <p>MiniMax，未公开，MiniMax 新一代通用模型，中文长文、Agent 和多模态工作流…</p>
+            </div>
+          </article>
+
+          <article class="event phase-peak">
+            <div class="marker" aria-hidden="true">219</div>
+            <time datetime="2026-06-01">2026.06</time>
+            <div class="event-body">
+              <h2><span class="latin">Qwen3.7-Plus</span></h2>
+              <p>阿里云，未公开，Qwen3.7 高性价比版本，面向通用对话和工具调用</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <button class="edge-jump edge-jump-left" type="button" aria-label="跳到时间轴开头">
+        ‹
+      </button>
+      <button class="edge-jump edge-jump-right" type="button" aria-label="跳到时间轴末尾">
+        ›
+      </button>
+    </main>
+  </body>
+</html>
